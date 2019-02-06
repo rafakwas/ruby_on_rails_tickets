@@ -1,8 +1,8 @@
-<h1>Editing Ticket</h1>
+<h1>Edycja biletu</h1>
 
 <%= render 'form', ticket: @ticket %>
 
 <%= render "events_list", events: Event.all %>
 
-<%= link_to 'Show', @ticket %> |
-<%= link_to 'Back', tickets_path %>
+<td><%= link_to 'Pokaz', @ticket, class: 'btn btn-info btn-xs' %></td>
+<td><%= link_to 'Powrót', tickets_path, class: 'btn btn-warning btn-xs' %></td>

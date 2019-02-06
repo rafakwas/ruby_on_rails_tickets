@@ -1,7 +1,7 @@
-<h1>New Ticket</h1>
+<h1>Kupno nowego biletu</h1>
 
 <%= render 'form', ticket: Ticket.new( :user_id=>current_user.id) %>
 
 <%= render "events_list", events: Event.all %>
 
-<%= link_to 'Back', tickets_path %>
+<td><%= link_to 'Powrót', tickets_path, class: 'btn btn-warning btn-xs' %></td>
